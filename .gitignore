@@ -1,0 +1,33 @@
+# Terraform
+*.tfstate
+*.tfstate.*
+crash.log
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+.terraform/
+.terraform.lock.hcl
+
+# Sensitive
+*.pem
+*.key
+*.secrets
+
+# Local files
+*.tfvars
+*.auto.tfvars
+terraform.tfvars
+*.bak
+*.log
+update_changelog.sh
+
+# OS/Editor
+.DS_Store
+.idea/
+.vscode/
+*.swp
+
+# Git
+.git/
+
