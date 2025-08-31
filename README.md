@@ -1,6 +1,6 @@
 # Datacynth Infra: Your Low-Cost AWS Dev & Prod Playground
 
-Welcome! The goal of this repository is to quickly and cheaply spin up two AWS environments that mimic a development (`dev`) and production (`main`) setup. It's perfect for testing and simulations without breaking the bank.
+Welcome! The goal of this repository is to quickly and cheaply spin up two AWS environments that mimic a development (`dev`) and production (`prod`) setup. It's perfect for testing and simulations without breaking the bank.
 
 This project leverages the [datacynth-tf-modules](https://github.com/joerawr/datacynth-tf-modules) to keep the configuration clean and reusable.
 
@@ -63,10 +63,10 @@ Terraform needs a place to store its state, and we'll be using an S3 bucket in e
 
 ### 2. Configure Your Environments
 
-In both the `dev/` and `main/` directories, you'll find a `terraform.tfvars` file. This is where you'll set the unique name for your environment.
+In both the `dev/` and `prod/` directories, you'll find a `terraform.tfvars` file. This is where you'll set the unique name for your environment.
 
-- **Required:** Change the `name` variable in `dev/terraform.tfvars` and `main/terraform.tfvars`.
-- **Optional:** You can also change the default IP ranges (`vpc_cidr`) if you have a preference. The defaults are `10.0.0.0/24` for dev and `10.1.0.0/24` for main.
+- **Required:** Change the `name` variable in `dev/terraform.tfvars` and `prod/terraform.tfvars`.
+- **Optional:** You can also change the default IP ranges (`vpc_cidr`) if you have a preference. The defaults are `10.0.0.0/24` for dev and `10.1.0.0/24` for prod.
 
 ### 3. Deploy with Terraform
 
